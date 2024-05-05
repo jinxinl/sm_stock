@@ -7,7 +7,7 @@ function VaRRate=voliatility_VaR()
     VaRRate = zeros(num_stocks, 1);
     
     for i = 1:num_stocks
-        stock_returns=profitRate(1:end,i);
-        VaRRate(i)=quantile(stock_returns, alpha);
+        stock_returns=profitRate(i,1:end);
+        VaRRate(i)=(-1)*quantile(stock_returns, alpha);
     end
    
