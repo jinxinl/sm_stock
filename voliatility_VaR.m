@@ -1,4 +1,5 @@
-function VaRRate=voliatility_VaR(profitRate)
+function VaRRate=voliatility_VaR()
+    run('sm_MaxProfit.m');
     num_stocks = 10;%股票数量
     
     %计算VaR
@@ -9,7 +10,4 @@ function VaRRate=voliatility_VaR(profitRate)
         stock_returns=profitRate(1:end,i);
         VaRRate(i)=quantile(stock_returns, alpha);
     end
-    
-    % 输出每只股票的 VaR
-    disp('每只股票的 VaR:');
-    disp(VaRRate);
+   
