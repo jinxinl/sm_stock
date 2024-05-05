@@ -18,7 +18,7 @@ for i=1:10
     meanRate(i)=mean(profitRate(1:end,i));
 end
 
-voliatility_VaR(profitRate);%运行后会打印展示各个股票的历史风险值
+voliatility_VaR(profitRate);%运行后会打印展示各个股票的历史风险
 
 
 
