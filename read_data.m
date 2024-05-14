@@ -1,11 +1,11 @@
 %function stockData=read_data()
 %从txt中读入数据
-data=readmatrix('test_2019to2020.csv');
+data=readmatrix('stock_data.csv');
 
 %训练数据：line2~line2001，共2000个
 srcline=2;
 
-dstline=127;
+dstline=3524;
 A=data(srcline:dstline,2);%读取第2行到第2001行，第二列的数据，数组名为股票名
 AA=data(srcline:dstline,3);
 ABC=data(srcline:dstline,4);
