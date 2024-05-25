@@ -1,5 +1,5 @@
 run("sm_MaxProfit.m")
-c = [0,meanRate.*1000*(-1)]; % 收益率的数组
+c = [0,meanRate.*(-1)]; % 收益率的数组
 q = volatility_std().*1000; % 风险率的数组，运用最大回撤法
 a = 0:0.001:0.1; % 设置 a 的范围
 
